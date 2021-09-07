@@ -1,0 +1,5 @@
+test/
+.env.prod
+.env.stage
+.idea
+.DS_Store

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  prod-monitor:
+    build: .
+    command: [ "/monitor" ]
+    env_file:
+      - .env.prod
+    restart: on-failure
+  stage-monitor:
+    build: .
+    command: [ "/monitor" ]
+    env_file:
+      - .env.stage
+    restart: on-failure
